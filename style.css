@@ -50,26 +50,18 @@ body {
 .footer-links a:hover {
     color: #ffc107 !important;
 }
-footer, .footer {
+footer, .footer, div.footer, [class*="footer"], .bg-dark, .bg-light {
     background-color: #212529 !important;
-    color: #ffffff !important;
-    padding: 40px 0 20px 0;
 }
-footer h5, 
-footer h6, 
-footer .footer-title {
+
+footer *, .footer *, div.footer *, [class*="footer"] * {
     color: #ffffff !important;
 }
-footer p, 
-footer span {
-    color: #cccccc !important;
-}
-footer a, 
-.footer-links a {
+
+footer a, .footer a, div.footer a, [class*="footer"] a, .footer-links a {
     color: #ffffff !important;
-    text-decoration: none;
+    text-decoration: none !important;
 }
-footer a:hover, 
-.footer-links a:hover {
+footer a:hover, .footer a:hover, div.footer a:hover, [class*="footer"] a:hover, .footer-links a:hover {
     color: #ffc107 !important;
 }
