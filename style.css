@@ -1,74 +1,54 @@
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: system-ui, -apple-system, sans-serif;
+    background-color: #f8f9fa;
     color: #333;
 }
-.navbar-brand {
-    font-weight: bold;
-    font-size: 1.25rem;
-}
+
 .hero-section {
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('cl2.webp') no-repeat center center;
-    background-size: cover;
-    color: white;
-    padding: 120px 0 140px 0;
-    text-align: center;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('cl2.webp') center/cover;
+    min-height: 480px;
+    padding: 80px 0;
+    color: #ffffff; 
 }
-.hero-section h1 {
-    font-weight: 800;
-    font-size: 3rem;
-    margin-bottom: 15px;
-}
+
+.hero-section h1, 
+.hero-section h2, 
 .hero-section p {
-    font-size: 1.1rem;
-    margin-bottom: 30px;
+    color: #ffffff !important;
 }
-.feature-card {
-    border: none;
-    border-radius: 8px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-    transition: transform 0.3s ease;
-    background: #fff;
+
+.feature-card, .destination-card {
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-.feature-card:hover {
+
+.feature-card:hover, .destination-card:hover {
     transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
 }
-.section-title {
-    color: #0d6efd;
-    font-weight: 700;
-    text-align: center;
-    margin-bottom: 5px;
-}
-.section-subtitle {
-    text-align: center;
-    color: #666;
-    margin-bottom: 40px;
-    font-size: 0.95rem;
-}
-.destination-card {
-    border: none;
-    border-radius: 8px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-    overflow: hidden;
-}
+
 .destination-card img {
-    height: 200px;
+    height: 220px;
     object-fit: cover;
 }
-footer {
-    background-color: #1a1a1a;
-    color: #ccc;
-    padding: 50px 0 20px 0;
-    font-size: 0.9rem;
+
+.section-title {
+    color: #0d6efd;
+    font-weight: 800;
+    position: relative;
+    padding-bottom: 10px;
 }
-footer h5 {
-    color: white;
-    font-weight: 600;
-    margin-bottom: 20px;
+
+.section-title::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: #0d6efd;
+    margin: 8px auto 0;
+    border-radius: 2px;
 }
-footer a {
-    color: #ccc;
-    text-decoration: none;
-}
-footer a:hover {
-    color: white;
+
+.footer-links a:hover {
+    color: #ffc107 !important;
 }
