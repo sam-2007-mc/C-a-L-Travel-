@@ -38,7 +38,6 @@ body {
     position: relative;
     padding-bottom: 10px;
 }
-
 .section-title::after {
     content: '';
     display: block;
@@ -48,7 +47,29 @@ body {
     margin: 8px auto 0;
     border-radius: 2px;
 }
-
+.footer-links a:hover {
+    color: #ffc107 !important;
+}
+footer, .footer {
+    background-color: #212529 !important;
+    color: #ffffff !important;
+    padding: 40px 0 20px 0;
+}
+footer h5, 
+footer h6, 
+footer .footer-title {
+    color: #ffffff !important;
+}
+footer p, 
+footer span {
+    color: #cccccc !important;
+}
+footer a, 
+.footer-links a {
+    color: #ffffff !important;
+    text-decoration: none;
+}
+footer a:hover, 
 .footer-links a:hover {
     color: #ffc107 !important;
 }
